@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Permanent+Marker&family=Roboto:wght@100;300&family=Suez+One&display=swap');
+
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&family=Inter:wght@400;500&family=Irish+Grover&family=Kanit&family=Marcellus&family=Monda:wght@400;700&family=Montserrat:wght@400;600;800;900&family=Noto+Sans:wght@400;700&family=Poppins:wght@400;700;900&family=Raleway:wght@600;700&family=Reem+Kufi+Ink&family=Righteous&family=Roboto:wght@100;300;400;700;900&family=Ubuntu&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300;400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Nunito:wght@200;300;400;500;600;700;800;900;1000&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  font-family: "Nunito", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #002733;
+  overflow-x: hidden;
+}
+
+.orange {
+    color: #ff5e14;
+  }
+  
+  .montserrat {
+    font-family: "Montserrat", sans-serif;
+  }
+  
+  img {
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    height: 100%;
+  }
+  
+  .container {
+    max-width: 1300px;
+    margin: 0px auto 0px auto;
+    padding: 0px 40px;
+  }
+  @media (min-width: 1200px) and (max-width: 1441px) {
+    .testimonials .container {
+      max-width: 1250px;
+      padding: 0px 36px;
+    }
+  }
+  @media (max-width: 767px) {
+    .testimonials .container {
+      padding: 0px 30px;
+    }
+  }
+  @media (max-width: 479px) {
+    .testimonials .container {
+      padding: 0px 30px 0px 20px;
+      /* min-height: 140vh; */
+      /* border: 1px solid white; */
+    }
+  }
+  
+.testimonials {
+    margin-top: 100px;
+    margin-bottom: 100px;
+  }
+  @media (max-width: 479px) {
+      
+    .testimonials {
+      margin-top: 100px;
+      margin-bottom: 100px;
+      /* border: 1px solid white; */
+      min-height: 110vh;
+    }
+  }
+  .testimonials .testimonials-title {
+    font-size: 55px;
+    color: #fff;
+    font-weight: 700;
+    padding-bottom: 50px;
+    font-family: "Poppins", sans-serif !important
+  }
+  @media (max-width: 500px) {
+    .testimonials .testimonials-title {
+      font-size: 30px;
+    }
+  }
+  .testimonials .flex-container-outer {
+    margin-top: -30px;
+    display: flex;
+    width: 100%;
+    gap: 50px;
+    align-items: flex-start;
+  }
+  @media (max-width: 1000px) {
+    .testimonials .flex-container-outer {
+      flex-wrap: wrap;
+    }
+    .testimonials .flex-container-outer .box {
+      width: 100%;
+    }
+    .testimonials .flex-container-outer .box2 {
+      margin-top: unset;
+    }
+  }
+  .testimonials .box2 {
+    margin-top: 80px;
+  }
+  .testimonials .box {
+    width: 60%;
+    background: #101010;
+    border-left: 5px solid #ff5e14;
+  }
+  .testimonials .box .title {
+    width: 100%;
+    display: block;
+    text-align: center;
+    padding: 20px 0px;
+    font-size: 30px;
+    color: #ff5e14;
+    font-weight: 900;
+  }
+  .testimonials .box .flex-container-testimonials {
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+  }
+  @media (max-width: 600px) {
+    .testimonials .box .flex-container-testimonials {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  .testimonials .box .flex-container-testimonials .image-container {
+    flex-basis: 20%;
+    height: 150px;
+    -webkit-clip-path: polygon(20px 0, 100% 0, 100% 70%, 0% 100%, 0% 20px);
+            clip-path: polygon(20px 0, 100% 0, 100% 70%, 0% 100%, 0% 20px);
+    margin-left: 50px;
+    background-color: #87A4B6;
+    overflow: hidden;
+    transform-origin: center top;
+    transition: all 0.2s ease-in-out;
+    ;
+  }
+  .testimonials .box .flex-container-testimonials .image-container:hover {
+    -webkit-clip-path: polygon(0px 0, 100% 0, 100% 100%, 0% 100%, 0% 0px);
+            clip-path: polygon(0px 0, 100% 0, 100% 100%, 0% 100%, 0% 0px);
+    transform: scale(1.2);
+    border-radius: 10px;
+  }
+  @media (max-width: 600px) {
+    .testimonials .box .flex-container-testimonials .image-container {
+      width: 70%;
+      margin-left: 0px;
+    }
+  }
+  .testimonials .box .flex-container-testimonials .image-container img {
+    -o-object-position: center top;
+       object-position: center top;
+    transform-origin: top center;
+  }
+  .testimonials .box .flex-container-testimonials .content {
+    background-color: #474e4f;
+    flex-basis: 65%;
+    padding: 20px 50px;
+    -webkit-clip-path: polygon(0% 20px, 20px 0%, 100% 0, 100% 100%, 0 100%);
+            clip-path: polygon(0% 20px, 20px 0%, 100% 0, 100% 100%, 0 100%);
+    padding-bottom: 40px;
+  }
+  .testimonials .box .flex-container-testimonials .content .name {
+    font-size: 20px;
+    font-weight: 900;
+    color: white;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  .testimonials .box .flex-container-testimonials .content .text {
+    color: #fff;
+    position: relative;
+  }
+  .testimonials .box .flex-container-testimonials .content .text::before {
+    content: "''";
+    position: absolute;
+    top: -25px;
+    left: -25px;
+    font-size: 50px;
+  }
+  .testimonials .box .flex-container-testimonials .content .text::after {
+    content: "''";
+    position: absolute;
+    right: -10px;
+    bottom: -50px;
+    font-size: 50px;
+  }
+  

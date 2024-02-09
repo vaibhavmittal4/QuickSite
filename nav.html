@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<!-- Created By CodingNepal - www.codingnepalweb.com -->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Responsive Navbar | CodingNepal</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/nav.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+  </head>
+  <body>
+    <nav>
+      <input type="checkbox" id="check">
+      <label for="check" class="checkbtn">
+        <i class="fas fa-bars"></i>
+      </label>
+      <label class="logo"><img src='images/Monochrome Modern Technology Black Logo.png' class="logo-img"></label></label>
+      <!-- <label class="logo">QuickSite</label> -->
+      <ul>
+        <li><a class="active" href="index.html">Home</a></li>
+        <li><a href="#icon">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#skill">Portfolio</a></li>
+        <li><a href="#main_footer">Contact</a></li>
+        <!-- <li><a href="#">Feedback</a></li> -->
+      </ul>
+    </nav>
+  </body>
+  <script>
+
+    // let mybutton2 = document.getElementsByClassName("topssss");
+    // console.log(mybutton2);
+    let nav = document.querySelector("nav");
+      window.onscroll = function() {
+        if(document.documentElement.scrollTop > 20){
+          nav.classList.add("sticky");
+          // mybutton2.style.display = "block";
+        }else {
+          nav.classList.remove("sticky");
+          // mybutton2.style.display = "none";
+        }
+      }
+
+    </script>
+
+</html>

@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>QuickSite</title>
+  <link rel="icon" href="images/Monochrome Modern Technology Black Logo.ico" type="image/vnd.microsoft.icon" />
+
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/services.css">
+  <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"
+    integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script>
+    $(function () {
+      $("#navbar").load("nav.html");
+    });
+    // $(function () {
+    //   $("#accesibility").load("sidemenu.html");
+    // });
+    $(function () {
+      $("#main_footer").load("footer.html");
+    });
+    $(function () {
+      $("#services").load("services.html");
+    });
+    $(function () {
+      $("#icon").load("icon.html");
+    });
+    $(function () {
+      $("#about").load("about.html");
+    });
+    $(function () {
+      $("#skill").load("skills.html");
+    });
+    $(function () {
+      $("#test").load("test.html");
+    });
+  </script>
+</head>
+
+<body class="grayscale high-contrast">
+  <div id="accesibility"></div>
+  <div id="navbar"></div>
+
+
+
+
+
+
+
+  <section class='c-slider'>
+    <div class='c-slider-init'>
+
+      <div class='c-slide'
+        style='background-image:url(./../images/slider1.jpg)'>
+        <div class='c-slide-content'>
+          <div class='c-wrap c-wrap--line'>
+            <h2 class='c-slide__title adjustable_text'>
+              Digital
+              <span class='c-slide__title--large adjustable_text'>Mastery</span>
+            </h2>
+          </div>
+          <div class='c-wrap c-wrap--small'>
+            <div class='c-slide__info'>
+              <h3 class='c-slide__subtitle adjustable_text'>Code Unleashed</h3>
+              <p class='c-slide__body adjustable_text'>Unlock the potential of your online presence with our expert
+                front-end development services. We specialize in creating visually stunning and user-friendly websites
+                to enhance your digital footprint.
+
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class='c-slide'
+        style='background-image:url(./../images/slider2.jpg)'>
+        <div class='c-slide-content'>
+          <div class='c-wrap c-wrap--line'>
+            <h2 class='c-slide__title adjustable_text'>
+              Visual
+
+              <span class='c-slide__title--medium adjustable_text'>Alchemy</span>
+            </h2>
+          </div>
+          <div class='c-wrap c-wrap--small'>
+            <div class='c-slide__info'>
+              <h3 class='c-slide__subtitle adjustable_text'>Design Elegance</h3>
+              <p class='c-slide__body adjustable_text'>Elevate your digital identity with our expert web design
+                services. We specialize in creating visually stunning and functional websites that leave a lasting
+                impression on your audience.
+
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class='c-slide'
+        style='background-image:url(./../images/slider3.jpg)'>
+        <div class='c-slide-content'>
+          <div class='c-wrap c-wrap--line'>
+            <h2 class='c-slide__title adjustable_text'>
+              Frame
+              <span class='c-slide__title--large adjustable_text'>Harmony</span>
+            </h2>
+          </div>
+          <div class='c-wrap c-wrap--small'>
+            <div class='c-slide__info'>
+              <h3 class='c-slide__subtitle adjustable_text'>Editing Wizardry</h3>
+              <p class='c-slide__body adjustable_text'>Experience editing wizardry with our precise and creative touch.
+                Each frame comes to life, weaving a seamless narrative that captivates and elevates your visual
+                storytelling journey.
+
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <div id="services"></div>
+  <div id="icon"></div>
+  <div id="about"></div>
+  <div id="skill"></div>
+  <div id="test"></div>
+  <div id="main_footer"></div>
+  <button onclick="topFunction()" id="topbtn" title="Go to top" class="button topssss"><i class="fas fa-arrow-up"></i></button>
+  <!-- <div class="button">
+    <a href="" id="topbtn" onclick="topFunction()"><i class="fas fa-arrow-up"></i></a>
+  </div> -->
+</body>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://rawgit.com/cfoehrdes/slick/master/slick/slick.js"></script>
+<script>
+  // Get the button:
+  
+
+  // When the user clicks on the button, scroll to the top of the document
+  function topFunction() {
+      document.body.scrollTop = 0; // For Safari
+      document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+      
+  }
+
+  let mybutton2 = document.getElementsByClassName("topssss");
+    // console.log(mybutton2);
+    // let nav = document.querySelector("nav");
+      window.onscroll = function() {
+        if(document.documentElement.scrollTop > 20){
+          // nav.classList.add("sticky");
+          mybutton2.style.display = "block";
+        }else {
+          // nav.classList.remove("sticky");
+          mybutton2.style.display = "none";
+        }
+      }
+</script>
+<script>
+  jQuery(document).ready(function () {
+    jQuery(".c-slider-init").slick({
+      dots: false,
+      nav: false,
+      arrows: false,
+      infinite: true,
+      speed: 1200,
+      autoplaySpeed: 4000,
+      slidesToShow: 1,
+      adaptiveHeight: true,
+      autoplay: true,
+      draggable: false,
+      pauseOnFocus: false,
+      pauseOnHover: false
+    });
+
+    jQuery(".slick-current").addClass("initialAnimation");
+
+    let transitionSetup = {
+      target: ".slick-list",
+      enterClass: "u-scale-out",
+      doTransition: function () {
+        var slideContainer = document.querySelector(this.target);
+        slideContainer.classList.add(this.enterClass);
+        jQuery(".slick-current").removeClass("animateIn");
+      },
+      exitTransition: function () {
+        var slideContainer = document.querySelector(this.target);
+        setTimeout(() => {
+          slideContainer.classList.remove(this.enterClass);
+          jQuery(".slick-current").addClass("animateIn");
+        }, 2000);
+      }
+    };
+
+    var i = 0;
+    // On before slide change
+    jQuery(".c-slider-init").on("beforeChange", function (
+      event,
+      slick,
+      currentSlide,
+      nextSlide
+    ) {
+      if (i == 0) {
+        event.preventDefault();
+        transitionSetup.doTransition();
+        i++;
+      } else {
+        i = 0;
+        transitionSetup.exitTransition();
+      }
+
+      jQuery(".c-slider-init").slick("slickNext");
+      jQuery(".slick-current").removeClass("initialAnimation");
+    });
+  });
+</script>
+
+</html>

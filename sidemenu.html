@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Little Warriors</title>
+  <link rel="stylesheet" href="./css/sm.css" />
+  <!-- <link rel="stylesheet" href="./css/index.css" /> -->
+  <script src="https://kit.fontawesome.com/a862feff0b.js" crossorigin="anonymous"></script>
+
+  <script defer src="./js/acc.js"></script>
+</head>
+nav.sticky{
+  padding: 15px 20px;
+  backdrop-filter: blur(5px);
+  background-color: rgba(255, 255, 255, .15);
+}
+<body>
+  <div class="accessibility-menu grayscale high-contrast" id="accessibility-menu">
+    <div class="show-menu-toggle" id="menu-toggle">
+      <i class="fa-solid fa-person"></i>
+      <p></p>
+    </div>
+    <div class="menu">
+      <p>Accessibility Tools</p>
+      <ul>
+        <li>
+          <i class="fa-solid fa-magnifying-glass-plus"></i>
+          <p id="increase-text">Increase Text</p>
+        </li>
+        <li>
+          <i class="fa-solid fa-magnifying-glass-minus"></i>
+          <p id="decrease-text">Decrease Text</p>
+        </li>
+        <li>
+          <i class="fa-solid fa-link"></i>
+          <p id="highlight-links">Highlight Links</p>
+        </li>
+        <li>
+          <i class="fa-sharp fa-solid fa-barcode"></i>
+          <p id="grayscale">Grayscale</p>
+        </li>
+        <li>
+          <i class="fa-solid fa-circle-half-stroke"></i>
+          <p id="high-contrast">High Contrast</p>
+        </li>
+        <!--<li><i class="fa-solid fa-moon"></i><p>Dark Yellow</p></li>-->
+        <li>
+          <i class="fa-solid fa-rotate-right"></i>
+          <p id="reset">Reset Settigs</p>
+        </li>
+      </ul>
+    </div>
+  </div>
+</body>
+
+</html>

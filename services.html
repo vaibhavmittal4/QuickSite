@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/services.css">
+
+</head>
+<body>
+    <div class="services" id="service-id">
+        <div class="ser-left fade-in-left">
+            <span class="ser-spa1">OUR SERVICES</span>
+            <span class="ser-spa2">What We <span class="ser-spa21">Do.</span></span>
+            <hr class="hrs1">
+            <span class="ser-spa3">
+                Elevate your digital presence with our comprehensive front-end development services.
+                From responsive web design and UI/UX optimization to seamless JavaScript integration,
+                we craft visually stunning and user-centric experiences that leave a lasting impression.
+                Explore our offerings and let us transform your vision into a captivating online reality.
+            </span>
+            
+            <a href="contact.html"><div class="button_slide slide_right services-btn" >Contact</div></a>
+        </div>
+        <div class="ser-right">
+            <div class="container">
+                <div class="cards">
+                  <div class="card card-one">
+                    <h2 class="card-title">Web Development</h2>
+                    <p class="date">$1000-$6000</p>
+                    <p class="description">Unlock the potential of your online presence with our expert front-end development services. We specialize in creating visually stunning and user-friendly websites to enhance your digital footprint.</p>
+                  </div>
+                  
+                  <div class="card card-two">
+                    <h2 class="card-title">Animations</h2>
+                    <p class="date">$200-$500</p>
+                    <p class="description">Bring your digital presence to life with our animation expertise. From subtle transitions to captivating visuals, we specialize in creating dynamic and engaging animations that elevate your online experience.</p>
+                  </div>
+                  
+                  <div class="card card-three">
+                    <h2 class="card-title">Responsiveness</h2>
+                    <p class="date">$200-$600</p>
+                    <p class="description">Ensure your online presence adapts seamlessly to every device with our expertise in responsiveness. We craft websites that not only look great but function flawlessly across all platforms.</p>
+                  </div>
+                  
+                  <div class="card card-four">
+                    <h2 class="card-title">Web Designing</h2>
+                    <p class="date">$1000-$2300</p>
+                    <p class="description">"Elevate your digital identity with our expert web design services. We specialize in creating visually stunning and functional websites that leave a lasting impression on your audience.</p>
+                  </div>
+                </div>
+              </div>
+        </div>
+    </div>
+
+
+    <!-- <script type="text/javascript" src="./js/vanilla-tilt.js"></script> -->
+    <!-- <script src="https://code.jquery.com/jquery-3.6.4.js" integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E=" crossorigin="anonymous"></script> -->
+
+    <script>
+//         VanillaTilt.init(document.querySelectorAll(".gbox"), {
+// 		max: 25,
+// 		speed: 400,
+//         glare: true,
+//         "max-glare":1,
+// 	});
+
+//     $(document).ready(function(){
+// 	$('#nav-icon1,#nav-icon2,#nav-icon3,#nav-icon4').click(function(){
+// 		$(this).toggleClass('open');
+// 	});
+// }); -->
+
+
+
+function fadeElementInLeft() {
+  var elements = document.getElementsByClassName('fade-in-left');
+  for (var i = 0; i < elements.length; i++) {
+    var element = elements[i];
+    var position = element.getBoundingClientRect().top;
+    var screenHeight = window.innerHeight;
+
+    if (position < screenHeight) {
+      element.classList.add('fade-in-show');
+    }
+  }
+}
+
+document.addEventListener('DOMContentLoaded', fadeElementInLeft);
+window.addEventListener('scroll', fadeElementInLeft);
+    </script>
+</body>
+</html>
